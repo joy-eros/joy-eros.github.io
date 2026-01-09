@@ -2,73 +2,229 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>JOY-EROS · Joyería artesanal</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="favicon.png" type="image/png">  
+  <title>JOY-EROS · Joyería artística</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
   <style>
-    body {
+    /* RESET BÁSICO */
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       background-color: #000;
-      color: #eaeaea;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Helvetica, Arial, sans-serif;
+      color: #eee;
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.6;
+      display: flex;
+      justify-content: center;
     }
-    .container {
-      max-width: 720px;
-      margin: 60px auto;
-      padding: 0 24px;
+
+    main {
+      max-width: 800px;
+      padding: 3rem 1.5rem;
+      text-align: center;
     }
+
+    /* TÍTULOS */
     h1 {
-      font-size: 2.2em;
-      letter-spacing: 0.05em;
-      margin-bottom: 0.2em;
+      font-size: 2.2rem;
+      letter-spacing: 0.15em;
+      margin-bottom: 0.5rem;
     }
+
     h2 {
-      font-size: 1.1em;
-      font-weight: 400;
-      color: #b5b5b5;
-      margin-top: 0;
-      margin-bottom: 2em;
+      font-size: 1.4rem;
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.1em;
     }
+
+    /* TEXTOS */
     p {
-      margin-bottom: 1.5em;
+      font-size: 0.95rem;
+      color: #ccc;
+      margin-bottom: 1rem;
     }
-    .links a {
-      display: block;
-      margin: 12px 0;
-      color: #eaeaea;
-      text-decoration: none;
-      border-bottom: 1px solid #444;
-      width: fit-content;
+
+    .subtitulo {
+      font-size: 0.85rem;
+      color: #aaa;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
     }
-    .links a:hover {
-      border-bottom-color: #eaeaea;
-    }
-    footer {
-      margin-top: 60px;
-      font-size: 0.9em;
+
+    .frase {
+      margin-top: 2rem;
+      font-size: 0.85rem;
       color: #888;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* MENÚ */
+    nav {
+      margin: 2rem 0 3rem;
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #bbb;
+      text-decoration: none;
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    /* LINKS */
+    a {
+      color: #ddd;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* SECCIONES */
+    section {
+      margin-top: 4rem;
+    }
+
+    /* FAQ */
+    #faq {
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+
+    details {
+      border-bottom: 1px solid #222;
+      padding: 1rem 0;
+    }
+
+    summary {
+      cursor: pointer;
+      font-size: 0.9rem;
+      color: #ddd;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details p {
+      font-size: 0.85rem;
+      color: #aaa;
+      margin-top: 0.5rem;
+    }
+
+    /* CONTACTO */
+    #contacto {
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.75rem;
+      color: #666;
     }
   </style>
 </head>
+
 <body>
-  <div class="container">
-    <h1>JOY-EROS</h1>
-    <h2>Joyería artesanal · piezas de autor</h2>
-    <p>
-      Taller de joyería artesanal en plata 925.  
-      Piezas de autor realizadas a mano en Argentina, con más de 15 años de trayectoria y formación en joyería tradicional y contemporánea.
-    </p>
-    <div class="links">
-      <a href="https://www.instagram.com/joy.eros" target="_blank">Instagram</a>
-      <a href="https://wa.me/5491126821914" target="_blank">WhatsApp</a>
-      <a href="https://biolibre.ar/joyeros" target="_blank">MercadoLibre</a>
-    </div>
+  <main>
+
+    <!-- INICIO -->
+    <section id="inicio">
+      <h1>JOY-EROS</h1>
+      <p class="subtitulo">Joyería artística en plata 925</p>
+
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#faq">Preguntas frecuentes</a>
+      </nav>
+
+      <p>
+        Diseños artesanales realizados en Buenos Aires.
+        Piezas únicas que combinan tradición joyera,
+        oficio y una mirada contemporánea.
+      </p>
+
+      <p class="frase">
+        En la joyería, la autoridad no proviene del título,
+        sino del saber hacer.
+      </p>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <p>Contacto y redes</p>
+      <p>
+        <a href="https://biolibre.ar/joy-eros" target="_blank">BioLibre</a> ·
+        <a href="https://instagram.com/joy.eros" target="_blank">Instagram</a>
+        <a href="https://wa.me/5491126821914" target="_blank">WhatsApp</a>
+      </p>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <h2>Preguntas frecuentes</h2>
+
+      <details>
+        <summary>¿Cómo tomo la medida de mi anillo?</summary>
+        <p>
+          Medí el contorno del dedo con una cinta métrica.
+          Si no tenés, usá una tira de papel, marcá la unión
+          y medila con una regla en milímetros.
+        </p>
+      </details>
+
+      <details>
+        <summary>¿Qué significa plata 925?</summary>
+        <p>
+          Es una aleación compuesta por 92,5% de plata pura
+          y 7,5% de otros metales, lo que mejora su resistencia
+          y durabilidad.
+        </p>
+      </details>
+
+      <details>
+        <summary>¿Cómo limpio mis joyas de plata?</summary>
+        <p>
+          Colocá la pieza sobre papel aluminio en un recipiente,
+          agregá agua caliente y una cucharada de sal o bicarbonato.
+          Enjuagá y secá bien.
+        </p>
+      </details>
+    </section>
+
     <footer>
-      <p>Argentina · joyería artesanal</p>
+      © JOY-EROS · Buenos Aires - Argentina
     </footer>
+
+  </main>
+</body>
+</html>
+
   </div>
 </body>
 </html>
